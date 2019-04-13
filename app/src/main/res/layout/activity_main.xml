@@ -5,31 +5,53 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/zh"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <EditText
-        android:id="@+id/mm"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
 
     <Button
-        android:text="登录"
-        android:onClick="getLogin"
+        android:text="播放"
+        android:onClick="startplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="暂停"
+        android:onClick="pause"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
     <Button
-        android:text="注册"
-        android:onClick="getRegister"
+        android:text="取消"
+        android:onClick="close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+       android:id="@+id/messgae"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+
+    <Button
+        android:id="@+id/sendmessage"
+        android:text="发送黏性事件"
+        android:onClick="close"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
     <Button
-        android:text="忘记密码"
-        android:onClick="getForget"
+        android:id="@+id/rigisterbus"
+        android:text="注册bus"
+        android:onClick="close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/unrigisterbus"
+        android:text="解绑bus"
+        android:onClick="close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/handevent"
+        android:text="handle事件发送"
+        android:onClick="close"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
